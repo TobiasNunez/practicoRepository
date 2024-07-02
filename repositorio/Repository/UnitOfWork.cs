@@ -5,11 +5,11 @@ namespace MVCEF.Repositorio
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly DbContext _context;
+        private readonly RepositoryContext _context;
         private IGenericRepository<Curso> _cursos;
         private IGenericRepository<Estudiante> _estudiantes;
 
-        public UnitOfWork(DbContext context)
+        public UnitOfWork(RepositoryContext context)
         {
             _context = context;
         }
